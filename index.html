@@ -30,8 +30,10 @@
 
 </head>
 <body>
-   <button class="btn btn-info" onclick="openpopup()"> enquiry now </button>
 
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
  <!-- Modal popup form form -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -91,13 +93,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 
 <script>
-  function openpopup(){
-       $('#myModal').modal('show');
-
-}
-
-
-          
 
 function sendMessage(e){
     debugger
