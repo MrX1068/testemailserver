@@ -91,7 +91,7 @@
 <script>
 
 function sendMessage(e){
-
+e.preventDefault();
 const data ={
     name:"",
     email:"",
@@ -116,7 +116,9 @@ console.log("datsss"+data)
         
         body: JSON.stringify(data),
       })
-    .then(res=>alert("Data submitted."))
+    .then(res=>{
+        window.location = 'https://mrx1068.github.io/testemailserver/index.html'
+    })
     .catch(err=>alert("err") )
 }
 
